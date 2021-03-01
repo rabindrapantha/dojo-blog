@@ -36,6 +36,12 @@
   padding-bottom: 0;
 }
 
+.post-preview .author {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6e6e6e;
+}
+
 .posts-list:not(:first-child) {
   margin-top: 50px;
 }
