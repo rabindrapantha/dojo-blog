@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import List from "./posts/List";
 
 function Home() {
@@ -12,11 +12,15 @@ function Home() {
 
     const handleRemove = (id) => {
         let newPosts = posts.filter((post) => {
-            return (id != post.id);
+            return (id !== post.id);
         });
 
         setPosts(newPosts);
     }
+
+    useEffect(() => {
+        //
+    }, []);
 
     return (
         <div className="wrapper">
