@@ -9,8 +9,6 @@ function Home() {
         { title: 'JKL', body: 'Body 4', author: 'john', id: 3 }
     ]);
 
-    setPosts([]);
-
     return (
         <div className="wrapper">
             <List posts={posts} title="All posts!" />
