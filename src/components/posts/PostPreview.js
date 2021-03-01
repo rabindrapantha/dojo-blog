@@ -1,8 +1,9 @@
-const PostPreview = ({post}) => {
+const PostPreview = ({post, handleRemove}) => {
     return (
-        <div key={post.id} className="post-preview">
+        <div className="post-preview">
             <h3>{post.title}</h3>
             <p>Witten by {post.author}</p>
+            <button type="button" className="btn" onClick={() => handleRemove(post.id)}>Remove</button>
         </div>
     )
 }

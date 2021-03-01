@@ -36,9 +36,21 @@
   padding-bottom: 0;
 }
 
+.posts-list:not(:first-child) {
+  margin-top: 50px;
+}
+
 .posts-list h2 {
   margin-bottom: 30px;
   color: #f1356d;
+}
+
+.btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 10px 0;
 }
 
 @keyframes App-logo-spin {
